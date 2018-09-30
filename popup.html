@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body {
+  font-family: Arial;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  padding: 10px;
+  width: 280px;
+}
+
+#id01 {
+  padding: 0 5px;
+}
+
+#total,
+#id01 {
+  font-weight: bold;
+}
+
+img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.hlength {
+  font-size: 13px;
+  background: #252525;
+  display: block;
+  padding: 10px;
+  color: #56ef07;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.divider {
+  margin: 10px 0;
+  width: 100%;
+  height: 1px;
+  background: #eee;
+}
+
+.card {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 15px 10px;
+  box-shadow: 0 5px 10px #eee;
+}
+
+.attr {
+  border: 1px solid #eee;
+  margin: 15px 0 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.attr div {
+  display: block;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 12px;
+}
+
+.attr span {
+  font-weight: bold;
+  word-break: break-word;
+}
+
+.attr div:last-child {
+  border: none;
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="hlength">• Total Heros: <span id="total"></span> •</div>
+  <div class="divider"></div>
+  <div class="card">
+    <div id="id01"></div>
+    <div class="attr">
+      <div>Primary Attribute: <span id="primary_attr"></span></div>
+      <div>Attact Type: <span id="attack_type"></span></div>
+      <div>Roles: <span id="roles"></span></div>
+    </div>
+  </div>
+</div>
+<script src="popup.js"></script>
+</body>
+</html>
